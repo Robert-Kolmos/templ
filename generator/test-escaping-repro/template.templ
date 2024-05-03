@@ -1,5 +1,7 @@
 package testescapingrepro
 
+const pattern = `(https?|ftp):\/\/[^\s/$.?#].[^\s]*`
+
 templ render() {
-	<input pattern="(https?|ftp):\\/\\/[^\\s/$.?#].[^\\s]*" />
+	<input pattern={pattern}/>
 }
